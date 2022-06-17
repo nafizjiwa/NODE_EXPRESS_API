@@ -13,14 +13,14 @@ const createUser = (req, res, next) => {
     const userId = uuidv4();
     const userWithId = {...user, id: userId};
     users.push(userWithId);
-    // also a compressed more minimized code => users.push({...users, id: uuidv4()})
+        // also a compressed more minimized code => users.push({...users, id: uuidv4()})
     res.send(`User with the name ${user.firstName} has been added to the database!`);
 }
 const getAUser = (req, res, next) => {
     const {id} = req.params;
-    //to send user data for specific id back to user we need to search our database that has same specific id
-    //What are we searching for? From all users 'user' if the user.id in database is equal to the specific 'id' requested
-    //Send that users data back corresponding to that id and put it in a variable foundUser.
+        //to send user data for specific id back to user we need to search our database that has same specific id
+        //What are we searching for? From all users 'user' if the user.id in database is equal to the specific 'id' requested
+        //Send that users data back corresponding to that id and put it in a variable foundUser.
     const foundUser = users.find((user) => user.id == id); 
 
     res.send(foundUser);
