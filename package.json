@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "_type": "module",
-  "_comment": "This allows us to use the new syntax of 'import express from 'express'",
-  "//example": "of adding comment to json file",
+  "_comment": "Type in above quotes allows us to use the new syntax of 'import express from 'express'",
+  "//above is an example": "of adding comment to json file",
   "scripts": {
     "start": "nodemon index.js"
   },
