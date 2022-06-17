@@ -7,7 +7,10 @@
   "_comment": "Type in above quotes allows us to use the new syntax of 'import express from 'express'",
   "//above is an example": "of adding comment to json file",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "_with statement": "above we can use 'npm start' to initiate server provide nodemon in dev depend below',
+    "_otherwise": "must use 'node index.js' to intiate but no automatic restart available when making changs",
+    "_so to allow": "automatic change and save use _nodemon_ with 'npm start' "
   },
   "keywords": [],
   "author": "",
